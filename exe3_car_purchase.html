@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Purchase Form</title>
+    <style>
+        h2, div {
+            margin-left: 200px;
+            margin-right: 150px;
+        }
+        input[type=text] {
+        margin: 8px 0 8px;
+        box-sizing: border-box;
+        }
+        input[type=tel] {
+        margin: 8px 0 8px;
+        box-sizing: border-box;
+        }
+        input[type=submit] {
+        margin: 8px 0 8px;
+        box-sizing: border-box;
+        }
+        select{
+        margin: 8px 0 8px;
+        box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Car Purchase Form</h2>
+    <div>
+        <form action="#" method="get">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone"><br>
+            <label for="choose_car">Choose a car:</label>
+            <select name="choose_car" id="choose_car">
+                <option value="model1">Model 1</option>
+                <option value="model2">Model 2</option>
+                <option value="model3">Model 3</option>
+            </select><br>
+            <label for="choose_color">Choose a color:</label>
+            <select name="choose_color" id="choose_color">
+                <option value="red">Red</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+            </select><br>
+            <label for="quantity">Quantity:</label>
+            <input type="text" name="quantity" id="quantity"><br>
+            <label for="delivery">Delivery Date:</label>
+            <input type="date" name="delivery" id="delivery"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

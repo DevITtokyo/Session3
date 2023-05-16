@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Form</title>
+</head>
+<body>
+    <h2>Đăng ký mua xe ô tô</h2>
+    <form action="" method="got">
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Tên của bạn"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Email của bạn"><br>
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" name="phone" id="phone" placeholder="Số điện thoại của bạn"><br>
+        <label for="car_model">Xe ô tô muốn mua:</label>
+        <input list="browsers" name="brower" id="brower" placeholder="Mẫu xe">
+            <datalist id="browsers">
+                <option value="" aria-placeholder="Mẫu xe"></option>
+                <option value="VinFast">VinFast Fadil</option>
+                <option value="Toyota">Toyota Corolla Cross</option>
+                <option value="Huyndai">Huyndai Accent</option>
+                <option value="Honda">Honda City</option>
+                <option value="Mazda">Mazda CX-5</option>
+            </datalist>
+        </input><br>
+        <label for="message">Lời nhắn:</label><br>
+        <textarea name="message" id="message" rows="5"></textarea><br>
+        <label for="color">Màu xe</label>
+        <select name="color" id="color">
+            <option value="red">Đỏ</option>
+            <option value="black">Đen</option>
+            <option value="white">Trắng</option>
+        </select>
+        <fieldset>
+            <legend>Phương thức thanh toán</legend>
+            <input type="radio" name="pay_method" id="pay_method" value="credit">
+            <label for="credit">Thẻ tín dụng</label><br>
+            <input type="radio" name="pay_method" id="pay_method" value="baking">
+            <label for="baking">Chuyển khoản ngân hàng</label>
+        </fieldset>
+        <label for="agree">Tôi đồng ý với các điều khoản:</label>
+        <input type="checkbox" name="agree" id="agree">
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+</html>
